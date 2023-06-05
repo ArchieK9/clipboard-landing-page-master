@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap'); /* Added */
+
 body{
    display: flex;
    flex-direction: column;
@@ -5,10 +7,21 @@ body{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   font-family: 'Bai Jamjuree'; /* Added */
+}
+
+/* Added */
+*{
+    font-family: 'Bai Jamjuree';
 }
 
 .logo{
     width: 5rem;
+}
+
+/* Added */
+img {
+    pointer-events: none;
 }
 
 .header, .bottom{
@@ -171,12 +184,13 @@ button{
 }
 
 footer{
-    background-color: hsl(201, 11%, 66%);
+    background-color: hsl(201, 10%, 90%); /* Added */
     /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr; */
     width: 100%;
     padding: 2.5% 2.5%;
+    padding-bottom: 0; /* Added */
     box-sizing: border-box;
     height: auto;
     text-align: center;
@@ -185,20 +199,36 @@ footer{
 .footer-wrapper{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;  /* Added */
+    align-content: center; /* Added */
 }
 
 .logo-foot{
-    width: 5rem;
+    width: 3rem; /* Added */
 }
 
 .links{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     box-sizing: border-box;
     flex-wrap: wrap;
+}
+
+/* Added */
+.pair {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Added */ 
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social-links>img {
+    margin-right: 20px;
 }
 
 footer a{
@@ -206,6 +236,11 @@ footer a{
     text-decoration: none;
     color: hsl(210, 10%, 33%);
     text-align: left;
+}
+
+/* Added */
+.attribution{
+    margin-bottom: 0;
 }
 
 .attribution a{
