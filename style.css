@@ -429,6 +429,9 @@ a:hover{
     .header, .bottom{
         font-weight: 400;
         padding: .5rem .75rem;
-        font-size: 16px;
     }
+   
+   body{
+      font-size: 14.5px;
+   }
 }
