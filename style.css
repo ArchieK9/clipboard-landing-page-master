@@ -395,6 +395,7 @@ a:hover{
     }
     .links, footer, .footer-wrapper{
         flex-direction: column;
+        align-items: center:
     }
     .pair a{
         text-align: center;
